@@ -1,5 +1,5 @@
 h1 {
-    color: red;
+    color: rgb(57, 176, 255);
     font-size: 24px;
     text-align: center;
 } /* fim h1 */
@@ -33,8 +33,16 @@ ul li {
     margin-bottom: 4px;
 }
 
-.img{
-    border: 5px solid;
-    border-color: rgb(183, 0, 255);
-    height: 350px;
+.texto-simples {
+    text-align: justify;
+    font-size: 12pt;
+}
+
+.botao {
+    font-weight: bold;
+    padding: 4px;
+}
+
+.botao-secundario {
+    background-color: rgb(193, 192, 192);
 }
