@@ -1,11 +1,11 @@
-from flask import (Flask, request,render_template, redirect, url_for, flash) # Importa o flask
+from flask import (Flask, request,render_template, redirect, url_for, flash) 
 
 app = Flask(__name__) 
 app.secret_key = 'segredo'
 
-@app.route("/", methods=( 'GET',)) # Assina uma rota
-def index(): # função responsável pela página
-    nome = request.args.get('nome') #use seu nome
+@app.route("/", methods=( 'GET',)) 
+def index(): 
+    nome = request.args.get('nome') 
     return render_template('index.html', nome=nome)
 
 @app.route("/galeria", methods=( 'GET', )) 
